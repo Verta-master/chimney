@@ -816,9 +816,6 @@ h4,
 .product {
   padding-top: 40px;
   padding-bottom: 30px; }
-  .product .title-2 {
-    padding-left: 40px;
-    padding-right: 40px; }
 
 .product__subtitle {
   margin-bottom: 40px;
@@ -936,9 +933,6 @@ h4,
   padding-top: 20px;
   padding-bottom: 15px;
   background-color: #F4F4F6; }
-  .scheme .title-2 {
-    padding-left: 20px;
-    padding-right: 20px; }
 
 .scheme__img {
   width: 100%; }
@@ -959,3 +953,158 @@ h4,
   line-height: 18px;
   letter-spacing: 0.05em;
   color: #3F4959; }
+
+.catalog {
+  padding-top: 50px;
+  padding-bottom: 40px; }
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.catalog__item {
+  position: relative;
+  z-index: 2;
+  width: 330px;
+  max-width: 100%;
+  margin-bottom: 30px;
+  padding: 10px;
+  background: #FFFFFF;
+  border: 1px solid rgba(94, 183, 253, 0.1);
+  -webkit-box-shadow: 0 10px 15px 0 rgba(94, 183, 253, 0.3);
+          box-shadow: 0 10px 15px 0 rgba(94, 183, 253, 0.3); }
+  .catalog__item::before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1565C0;
+    opacity: 0;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s; }
+  .catalog__item:hover::before, .catalog__item:active::before {
+    opacity: 1;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s; }
+  .catalog__item:hover .catalog__price,
+  .catalog__item:hover .catalog__title, .catalog__item:active .catalog__price,
+  .catalog__item:active .catalog__title {
+    color: #fff;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s; }
+  .catalog__item:hover .catalog__img, .catalog__item:active .catalog__img {
+    background-color: rgba(255, 255, 255, 0);
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s; }
+
+.catalog__link {
+  display: block; }
+
+.catalog__img {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 275px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F4F4F6;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s; }
+  .catalog__img img {
+    display: block;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto; }
+
+.catalog__info {
+  position: relative;
+  z-index: 10;
+  padding-left: 20px; }
+
+.catalog__title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  color: #3F4959;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s; }
+
+.catalog__price {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 38px;
+  letter-spacing: 0.05em;
+  color: #1565C0;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s; }
+
+.info {
+  padding-bottom: 42px; }
+
+.info__img {
+  width: 100%;
+  margin-bottom: 8px; }
+  .info__img img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.info__text {
+  margin-top: 30px;
+  margin-bottom: 40px; }
+
+.info__attention {
+  font-size: 14px; }
+
+.dividend {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #F4F4F6; }
+
+.dividend__subtitle {
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.05em; }
+
+.dividend__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 40px; }
+
+.dividend__item {
+  width: 200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-top: 100px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #051013;
+  background-image: url(../img/icons/icon-item.svg);
+  background-repeat: no-repeat;
+  background-size: 61px 67px;
+  background-position: top center; }
+  .dividend__item p {
+    margin: 0; }
