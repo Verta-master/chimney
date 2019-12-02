@@ -190,7 +190,7 @@ gulp.task('content:convert', function(done) {
     done();
 });
 ;
-gulp.task('content', gulp.series('content:del', 'content:copy', 'content:convert'));
+gulp.task('content', gulp.series('content:del', 'content:copy'));
 
 
 // SVG-SPRITE

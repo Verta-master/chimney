@@ -1,0 +1,42 @@
+.dividend {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #F4F4F6;
+}
+
+.dividend__subtitle {
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.dividend__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 40px;
+}
+
+.dividend__item {
+  width: 200px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-top: 100px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #051013;
+  background-image: url(../img/icons/icon-item.svg);
+  background-repeat: no-repeat;
+  background-size: 61px 67px;
+  background-position: top center;
+  
+  p {
+    margin: 0;
+  }
+}
