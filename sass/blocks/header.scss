@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #fff;
+  
+  .logo img {
+    display: block;
+    width: 102px;
+    height: auto;
+  }
+  
+  &--menu {
+    position: absolute;
+  }
+}
+
+.header__wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__call {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: $red;
+  background-image: url(../img/icons/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-size: 23px 23px;
+  background-position: center;
+  
+  &:hover,
+  &:active {
+    background-color: $blue;
+  }
+}

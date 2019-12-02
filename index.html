@@ -6,11 +6,12 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Дымоходы</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
-    <div class="wrapper">
+    <div class="wrapper header__wrap">
       <nav class="menu">
         <button type="button" class="menu__btn"></button>
         <div class="menu__drop">
@@ -60,7 +61,7 @@
       <div class="logo">
         <img src="img/images/logo.png" alt="Logo">
       </div>
-      <a href="#" class="header__call"></a>
+      <a data-fancybox data-src="#call" href="javascript:;" class="header__call"></a>
     </div>
   </header>
   
@@ -441,8 +442,15 @@
     </div>
   </footer>
   
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   
   <!-- Slider -->
   <script>
