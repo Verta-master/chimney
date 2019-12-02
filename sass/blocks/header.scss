@@ -4,8 +4,6 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  padding-top: 40px;
-  padding-bottom: 20px;
   background-color: #F5F5F5;
   
   .logo img {
@@ -24,6 +22,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .header__call {
