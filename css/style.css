@@ -511,8 +511,6 @@ h4,
   left: 0;
   right: 0;
   z-index: 1000;
-  padding-top: 40px;
-  padding-bottom: 20px;
   background-color: #F5F5F5; }
   .header .logo img {
     display: block;
@@ -531,7 +529,9 @@ h4,
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-top: 40px;
+  padding-bottom: 20px; }
 
 .header__call {
   display: block;
@@ -685,7 +685,6 @@ h4,
     background-color: #1565C0; }
 
 .promo {
-  width: 375px;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
