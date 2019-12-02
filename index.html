@@ -73,40 +73,52 @@
       <div class="swiper-container promo__slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide promo__slide">
-            <figure class="promo__img">
-              <img src="img/images/menu-img.png" alt="Одностенные / одноконтурные дымоходы">
-            </figure>
-            <p>Одностенные / одноконтурные дымоходы</p>
+            <a href="#" class="promo__link">
+              <figure class="promo__img">
+                <img src="img/images/menu-img.png" alt="Одностенные / одноконтурные дымоходы">
+              </figure>
+              <p>Одностенные / одноконтурные дымоходы</p>
+            </a>
           </div>
           <div class="swiper-slide promo__slide">
-            <figure class="promo__img">
-              <img src="img/images/menu-img.png" alt="Круглые дымоходы (одностенные)">
-            </figure>
-            <p>Круглые дымоходы (одностенные)</p>
+            <a href="#" class="promo__link">
+              <figure class="promo__img">
+                <img src="img/images/menu-img.png" alt="Круглые дымоходы (одностенные)">
+              </figure>
+              <p>Круглые дымоходы (одностенные)</p>
+            </a>
           </div>
           <div class="swiper-slide promo__slide">
-            <figure class="promo__img">
-              <img src="img/images/menu-img.png" alt="Овальные дымоходы (одностенные)">
-            </figure>
-            <p>Овальные дымоходы (одностенные)</p>
+            <a href="#" class="promo__link">
+              <figure class="promo__img">
+                <img src="img/images/menu-img.png" alt="Овальные дымоходы (одностенные)">
+              </figure>
+              <p>Овальные дымоходы (одностенные)</p>
+            </a>
           </div>
           <div class="swiper-slide promo__slide">
-            <figure class="promo__img">
-              <img src="img/images/menu-img.png" alt="Двухконтурные. Дымоходы сендвичи">
-            </figure>
-            <p>Двухконтурные. Дымоходы сендвичи</p>
+            <a href="#" class="promo__link">
+              <figure class="promo__img">
+                <img src="img/images/menu-img.png" alt="Двухконтурные. Дымоходы сендвичи">
+              </figure>
+              <p>Двухконтурные. Дымоходы сендвичи</p>
+            </a>
           </div>
           <div class="swiper-slide promo__slide">
-            <figure class="promo__img">
-              <img src="img/images/menu-img.png" alt="Коаксиальные. Газовые дымоходы">
-            </figure>
-            <p>Коаксиальные. Газовые дымоходы</p>
+            <a href="#" class="promo__link">
+              <figure class="promo__img">
+                <img src="img/images/menu-img.png" alt="Коаксиальные. Газовые дымоходы">
+              </figure>
+              <p>Коаксиальные. Газовые дымоходы</p>
+            </a>
           </div>
           <div class="swiper-slide promo__slide">
-            <figure class="promo__img">
-              <img src="img/images/menu-img.png" alt="Общие детали дымоходов">
-            </figure>
-            <p>Общие детали дымоходов</p>
+            <a href="#" class="promo__link">
+              <figure class="promo__img">
+                <img src="img/images/menu-img.png" alt="Общие детали дымоходов">
+              </figure>
+              <p>Общие детали дымоходов</p>
+            </a>
           </div>
         </div>
         <div class="swiper-scrollbar promo__scrollbar"></div>
@@ -458,7 +470,14 @@
       scrollbar: {
         el: '.promo__scrollbar',
         hide: false,
+        clickable: true,
       },
+      slidesPerView: 'auto',
+      spaceBetween: 40,
+      freeMode: true,
+      mousewheel: true,
+      preventClicks: false,
+      preventClicksPropagation: false,
     });
   </script>
 </body>
