@@ -22,8 +22,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
+  padding-top: 37px;
+  padding-bottom: 17px;
 }
 
 .header__call {
@@ -39,5 +39,11 @@
   &:hover,
   &:active {
     background-color: $blue;
+  }
+}
+
+@media (max-width: 766px) and (orientation: landscape) {
+  .header {
+    position: absolute;
   }
 }

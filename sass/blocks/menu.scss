@@ -27,6 +27,7 @@
 
 .menu__top {
   padding: 5px 20px;
+  padding-bottom: 15px;
   background-color: $blue;
 }
 
@@ -34,6 +35,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .menu__item {
@@ -53,8 +55,8 @@
 
 .menu__link {
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .menu__bottom {
@@ -86,6 +88,8 @@
 }
 
 .menu__phones {
+  margin-bottom: 10px;
+  
   a {
     position: relative;
     display: block;

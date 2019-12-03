@@ -1,17 +1,18 @@
 .footer {
   padding-top: 50px;
-  padding-bottom: 70px;
+  padding-bottom: 80px;
   color: #fff;
   background: #263238;
   
   .logo {
+    margin-bottom: 45px;
     text-align: center;
   }
 }
 
 .footer__bottom {
   position: relative;
-  padding-top: 50px;
+  padding-top: 52px;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
@@ -54,16 +55,18 @@
 }
 
 .footer__block {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   text-align: center;
   
   &--contacts {
+    margin-bottom: 10px;
     font-size: 16px;
     letter-spacing: 0.05em;
     
     a {
       display: block;
       font-weight: 700;
+      letter-spacing: 0.05em;
       
       &:hover,
       &:active {
@@ -73,7 +76,7 @@
     
     address {
       display: block;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
   }
 }
@@ -93,7 +96,7 @@
   color: $red;
   
   li {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     
     a:hover,
     a:active {

@@ -1,5 +1,9 @@
 .info {
   padding-bottom: 42px;
+  
+  .title {
+    margin-bottom: 48px;
+  }
 }
 
 .info__img {
@@ -15,9 +19,14 @@
 
 .info__text {
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  
+  p {
+    margin-bottom: 20px;
+  }
 }
 
 .info__attention {
+  margin-top: 28px;
   font-size: 14px;
 }
