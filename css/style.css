@@ -1268,3 +1268,99 @@ h4,
     .footer__list li a:hover,
     .footer__list li a:active {
       text-decoration: underline; }
+
+.fancybox-close-small {
+  background-image: url(../img/icons/icon-close-dark.svg);
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center; }
+  .fancybox-close-small svg {
+    display: none; }
+
+.form__input {
+  display: block;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  background-color: #F5F5F5; }
+  .form__input::-webkit-input-placeholder {
+    color: rgba(51, 51, 51, 0.5);
+    opacity: 1; }
+  .form__input::-moz-placeholder {
+    color: rgba(51, 51, 51, 0.5);
+    opacity: 1; }
+  .form__input:-ms-input-placeholder {
+    color: rgba(51, 51, 51, 0.5);
+    opacity: 1; }
+  .form__input::-ms-input-placeholder {
+    color: rgba(51, 51, 51, 0.5);
+    opacity: 1; }
+  .form__input::placeholder {
+    color: rgba(51, 51, 51, 0.5);
+    opacity: 1; }
+
+.form__captcha {
+  margin-bottom: 20px; }
+
+.form__btn {
+  height: 60px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  letter-spacing: 0.05em; }
+
+.form__checkbox {
+  display: none; }
+
+.form__label {
+  display: block;
+  position: relative;
+  padding-left: 25px; }
+  .form__label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #E65100; }
+  .form__label::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icons/icon-tick-blue.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13px 13px; }
+  .form__label a {
+    color: #E65100;
+    text-decoration: underline; }
+    .form__label a:hover, .form__label a:active {
+      text-decoration: none; }
+
+.form__checkbox:checked + .form__label::after {
+  display: block; }
+
+.modal {
+  width: 335px;
+  max-width: 100%;
+  padding: 10px;
+  padding-bottom: 35px; }
+  .modal .title-2 {
+    margin-bottom: 10px; }
+
+.modal__subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #1565C0;
+  text-align: center; }

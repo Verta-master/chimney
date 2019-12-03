@@ -472,7 +472,18 @@
   
   <!-- Modal window -->
   <div style="display: none;" id="call" class="modal">
-    
+    <p class="title-2">Заказать звонок</p>
+    <p class="modal__subtitle">Все поля обязательны к заполнению</p>
+    <form action="#" class="form">
+      <input type="text" class="form__input" placeholder="Имя" required="">
+      <input type="tel" class="form__input" placeholder="Номер телефона" required="">
+      <div class="form__captcha">
+        <img src="img/images/captcha.jpg" alt="captcha">
+      </div>
+      <button type="submit" class="btn form__btn">Отправить</button>
+      <input type="checkbox" id="checkbox" class="form__checkbox" required="" checked="">
+      <label for="checkbox" class="form__label">Я ознакомился с <a href="#">политикой конфиденциальности</a> сайта и даю свое согласие на обработку моих персональных данных</label>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
