@@ -137,9 +137,9 @@
         </div>
         
         <div class="filter">
-          <button type="button" class="btn filter__btn">Показать фильтр</button>
+          <button type="button" class="btn filter__btn"><span>Показать фильтр</span></button>
           <div class="filter__main">
-            <button type="button" class="filter__close">Закрыть фильтр</button>
+            <button type="button" class="filter__close"><span>Закрыть фильтр</span></button>
             <form action="#" class="filter__form">
               <fieldset class="filter__field">
                 <p class="filter__title">КАТЕГОРИИ ТОВАРОВ</p>
@@ -200,29 +200,33 @@
               </fieldset>
               <fieldset class="filter__field">
                 <p class="filter__title">ЛИНЕЙКА ПРОДУКЦИИ</p>
-                <input type="radio" id="radio1" name="radio" class="filter__radio">
-                <label for="radio1" class="filter__radio-label">Все</label>
-                <input type="radio" id="radio2" name="radio" class="filter__radio">
-                <label for="radio2" class="filter__radio-label">«МОНО»</label>
-                <input type="radio" id="radio3" name="radio" class="filter__radio" checked="">
-                <label for="radio3" class="filter__radio-label">«МОНО» Круглые</label>
-                <input type="radio" id="radio4" name="radio" class="filter__radio">
-                <label for="radio4" class="filter__radio-label">«МОНО» Овальные</label>
-                <input type="radio" id="radio5" name="radio" class="filter__radio">
-                <label for="radio5" class="filter__radio-label">«ТЕРМО»</label>
-                <input type="radio" id="radio6" name="radio" class="filter__radio">
-                <label for="radio6" class="filter__radio-label">Коаксиальные</label>
-                <input type="radio" id="radio7" name="radio" class="filter__radio">
-                <label for="radio7" class="filter__radio-label">Общие детали дымоходов</label>
+                <div class="filter__options">
+                  <input type="radio" id="radio1" name="radio" class="filter__radio">
+                  <label for="radio1" class="filter__radio-label">Все</label>
+                  <input type="radio" id="radio2" name="radio" class="filter__radio">
+                  <label for="radio2" class="filter__radio-label">«МОНО»</label>
+                  <input type="radio" id="radio3" name="radio" class="filter__radio" checked="">
+                  <label for="radio3" class="filter__radio-label">«МОНО» Круглые</label>
+                  <input type="radio" id="radio4" name="radio" class="filter__radio">
+                  <label for="radio4" class="filter__radio-label">«МОНО» Овальные</label>
+                  <input type="radio" id="radio5" name="radio" class="filter__radio">
+                  <label for="radio5" class="filter__radio-label">«ТЕРМО»</label>
+                  <input type="radio" id="radio6" name="radio" class="filter__radio">
+                  <label for="radio6" class="filter__radio-label">Коаксиальные</label>
+                  <input type="radio" id="radio7" name="radio" class="filter__radio">
+                  <label for="radio7" class="filter__radio-label">Общие детали дымоходов</label>
+                </div>
               </fieldset>
               <fieldset class="filter__field">
                 <p class="filter__title">ТИП СЕРИИ ПРОДУКЦИИ</p>
-                <input type="checkbox" id="checkbox1" class="filter__checkbox">
-                <label for="checkbox1" class="filter__checkbox-label">Труба</label>
-                <input type="checkbox" id="checkbox2" class="filter__checkbox" checked="">
-                <label for="checkbox2" class="filter__checkbox-label">Отвод</label>
-                <input type="checkbox" id="checkbox3" class="filter__checkbox">
-                <label for="checkbox3" class="filter__checkbox-label">Тройник</label>
+                <div class="filter__center">
+                  <input type="checkbox" id="checkbox1" class="filter__checkbox">
+                  <label for="checkbox1" class="filter__checkbox-label">Труба</label>
+                  <input type="checkbox" id="checkbox2" class="filter__checkbox" checked="">
+                  <label for="checkbox2" class="filter__checkbox-label">Отвод</label>
+                  <input type="checkbox" id="checkbox3" class="filter__checkbox">
+                  <label for="checkbox3" class="filter__checkbox-label">Тройник</label>
+                </div>
               </fieldset>
               <fieldset class="filter__field">
                 <p class="filter__title">ТОЛЩИНА ИЗОЛЯЦИИ</p>
@@ -246,13 +250,15 @@
               </fieldset>
               <fieldset class="filter__field">
                 <p class="filter__title">НАЗНАЧЕНИЕ</p>
-                <input type="checkbox" id="checkbox9" class="filter__checkbox" checked="">
-                <label for="checkbox9" class="filter__checkbox-label">Для дома</label>
-                <input type="checkbox" id="checkbox10" class="filter__checkbox">
-                <label for="checkbox10" class="filter__checkbox-label">Для котла</label>
+                <div class="filter__center">
+                  <input type="checkbox" id="checkbox9" class="filter__checkbox" checked="">
+                  <label for="checkbox9" class="filter__checkbox-label">Для дома</label>
+                  <input type="checkbox" id="checkbox10" class="filter__checkbox">
+                  <label for="checkbox10" class="filter__checkbox-label">Для котла</label>
+                </div>
               </fieldset>
               <div class="filter__btns">
-                <button type="submit" class="btn filter__btn">ПОКАЗАТЬ</button>
+                <button type="submit" class="btn filter__show">ПОКАЗАТЬ</button>
                 <a href="#" class="filter__clear">СБРОСИТЬ</a>
               </div>
             </form>
@@ -427,6 +433,7 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/filter.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   
