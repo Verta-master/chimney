@@ -1,6 +1,10 @@
 .catalog {
   padding-top: 57px;
   padding-bottom: 20px;
+  
+  &--internal {
+    padding-top: 30px;
+  }
 }
 
 .catalog__list {
@@ -99,4 +103,8 @@
   letter-spacing: 0.05em;
   color: $blue;
   transition: ease-out 0.3s;
+}
+
+.catalog__text {
+  text-align: center;
 }

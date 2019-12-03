@@ -1,0 +1,27 @@
+.pages {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pages__link {
+  display: block;
+  margin: 7px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+}
+
+span.pages__link {
+  color: $red;
+}
+
+a.pages__link {
+  &:hover,
+  &:active {
+    color: $blue;
+  }
+}

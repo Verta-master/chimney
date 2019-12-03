@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -15,6 +15,14 @@
   &--menu {
     position: absolute;
   }
+  
+  &--scroll {
+    .header__wrap {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      transition: ease-out 0.3s;
+    }
+  }
 }
 
 .header__wrap {
@@ -24,6 +32,7 @@
   align-items: center;
   padding-top: 37px;
   padding-bottom: 17px;
+  transition: ease-out 0.3s;
 }
 
 .header__call {

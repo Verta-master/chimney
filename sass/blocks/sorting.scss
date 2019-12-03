@@ -1,0 +1,35 @@
+.sorting {
+  
+}
+
+.sorting__title {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+.sorting__select {
+  display: block;
+  width: 224px;
+  height: 35px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 25px;
+  font-size: 16px;
+  background-color: #E5E5E5;
+  border: 0;
+  outline: none;
+  appearance: none;
+  background-image: url(../img/icons/icon-down.svg);
+  background-repeat: no-repeat;
+  background-size: 11px 9px;
+  background-position: right 10px center;
+  
+  &::-ms-expand {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+}
