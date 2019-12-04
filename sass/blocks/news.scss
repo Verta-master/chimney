@@ -26,6 +26,23 @@
   list-style: none;
 }
 
+.news__article--about {
+  .news__img img {
+    width: calc(100% + 40px);
+    max-width: none;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .news__info {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+  }
+  .news__title {
+    font-size: 18px;
+  }
+}
+
 .news__list {
   margin-bottom: 30px;
   
