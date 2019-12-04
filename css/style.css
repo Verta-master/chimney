@@ -1907,8 +1907,8 @@ a.pages__link:hover, a.pages__link:active {
     counter-increment: myCounter;
     content: counter(myCounter);
     position: absolute;
-    top: 3px;
-    left: 0;
+    top: 5px;
+    left: 2px;
     width: 32px;
     height: 32px;
     display: -webkit-box;
@@ -1944,6 +1944,7 @@ a.pages__link:hover, a.pages__link:active {
     text-decoration: none; }
 
 .numlist__title {
+  margin-top: 10px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px; }
@@ -2023,6 +2024,7 @@ a.pages__link:hover, a.pages__link:active {
 
 .card__btn {
   height: 45px;
+  margin-top: 35px;
   margin-bottom: 30px;
   font-weight: 700; }
 
@@ -2054,6 +2056,7 @@ a.pages__link:hover, a.pages__link:active {
 .card__tabs {
   margin-bottom: 80px;
   padding: 20px;
+  padding-top: 30px;
   background-color: #E5E5E5; }
 
 .card__list {
@@ -2065,7 +2068,8 @@ a.pages__link:hover, a.pages__link:active {
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   text-align: left;
   font-weight: 700;
   font-size: 20px;
@@ -2090,7 +2094,7 @@ a.pages__link:hover, a.pages__link:active {
 
 .card__field {
   display: none;
-  padding-bottom: 30px; }
+  padding-bottom: 22px; }
 
 .card__title {
   font-weight: 700;
@@ -2200,8 +2204,11 @@ a.pages__link:hover, a.pages__link:active {
   font-size: 16px;
   line-height: 24px;
   background-color: #F5F5F5; }
-  .card__subfield .title-4 {
+  .card__subfield p {
     margin-top: 0; }
+  .card__subfield .title-4 {
+    margin-top: 0;
+    margin-bottom: 10px; }
   .card__subfield a {
     text-decoration: underline;
     color: #E65100; }
