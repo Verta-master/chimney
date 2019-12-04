@@ -1,0 +1,36 @@
+.feedback {
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  margin-bottom: 80px;
+  color: #fff;
+  background-color: $blue;
+}
+
+.feedback__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 35px;
+  padding-left: 90px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 64px;
+    background-image: url(../img/icons/icon-faq.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.feedback__btn {
+  letter-spacing: 0.05em;
+  
+  &:hover,
+  &:active {
+    background-color: #DB7C42;
+  }
+}

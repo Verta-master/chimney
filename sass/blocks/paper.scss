@@ -1,0 +1,52 @@
+.paper__img {
+  margin-bottom: 30px;
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.paper__content {
+  a {
+    text-decoration: underline;
+    color: $red;
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+  
+  p {
+    margin-bottom: 18px;
+  }
+  
+  .table-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+    
+    .card__row2,
+    table {
+      background-color: #F5F5F5;
+    }
+  }
+}
+
+.paper__text {
+  font-size: 14px;
+  
+  ul,
+  ol {
+    font-size: 12px;
+  }
+  ul li {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  ul {
+    margin-bottom: 20px;
+  }
+}
