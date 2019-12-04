@@ -2337,6 +2337,21 @@ a.pages__link:hover, a.pages__link:active {
     mix-blend-mode: multiply;
     -webkit-transition: ease-out 0.3s;
     transition: ease-out 0.3s; }
+  .gallery__img--zoom {
+    height: 200px; }
+    .gallery__img--zoom::after {
+      content: "";
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      width: 35px;
+      height: 35px;
+      background-image: url(../img/icons/icon-zoom.svg);
+      background-repeat: no-repeat;
+      background-size: contain; }
   .gallery__img:hover::before, .gallery__img:active::before {
     opacity: 1;
     -webkit-transition: ease-out 0.3s;
