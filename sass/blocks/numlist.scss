@@ -1,0 +1,62 @@
+.numlist {
+  ol {
+    padding: 0;
+    margin: 0;
+    counter-reset: myCounter;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 20px;
+      padding-left: 54px;
+      position: relative;
+      z-index: 5;
+    }
+
+    li::before {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 1;
+      text-align: center;
+      color: #fff;
+    }
+    
+    li::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -45px;
+      left: -35px;
+      width: 82px;
+      height: 82px;
+      background-image: url(../../img/icons/icon-list.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+  a {
+    text-decoration: underline;
+    color: $red;
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.numlist__title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
