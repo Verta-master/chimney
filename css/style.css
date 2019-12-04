@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-weight: 400;
   font-family: "Circe";
@@ -1467,6 +1468,7 @@ a.breadcrumbs__link {
   top: 0;
   left: -20px;
   right: -20px;
+  padding: 20px;
   padding-bottom: 40px;
   background-color: #F5F5F5; }
 
@@ -1639,6 +1641,149 @@ a.breadcrumbs__link {
   .filter__clear:hover, .filter__clear:active {
     color: #fff;
     background-color: #E65100; }
+
+.filter__list,
+.filter__menu {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.filter__item {
+  position: relative;
+  padding: 10px;
+  padding-bottom: 5px; }
+  .filter__item:hover .filter__link,
+  .filter__item:active .filter__item--active .filter__link {
+    color: #E65100; }
+  .filter__item:hover .filter__down svg,
+  .filter__item:active .filter__item--active .filter__down svg {
+    fill: #E65100; }
+  .filter__item--opened .filter__link {
+    color: #E65100; }
+  .filter__item--opened .filter__down svg {
+    fill: #E65100; }
+  .filter__item--opened .filter__down {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s; }
+
+.filter__link {
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #1565C0;
+  border-bottom: 1px solid #C4C4C4; }
+
+.filter__down {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s; }
+  .filter__down svg {
+    fill: #1565C0; }
+
+.filter__list {
+  display: none;
+  padding: 20px 30px;
+  border-bottom: 1px solid #C4C4C4; }
+
+.filter__subitem {
+  font-size: 18px;
+  color: #1565C0; }
+  .filter__subitem:hover,
+  .filter__subitem:active .filter__subitem--active {
+    color: #E65100; }
+
+.filter__range {
+  width: 320px;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* Ползунок */
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  /* позиционируем ползунки */
+  /* оформление полосы по которой ходит ползунок */
+  /* оформление активного участка (между двумя ползунками) */
+  /* скругление для полосы слайдера */ }
+  .filter__range .ui-slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%; }
+  .filter__range .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #1565C0;
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
+    cursor: pointer;
+    outline: none;
+    border: 0; }
+  .filter__range .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden; }
+  .filter__range .ui-slider-horizontal {
+    height: 5px; }
+  .filter__range .ui-slider-horizontal .ui-slider-handle {
+    top: -13px;
+    margin-left: -8px; }
+  .filter__range .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%; }
+  .filter__range .ui-slider-horizontal .ui-slider-range-min {
+    left: 0; }
+  .filter__range .ui-slider-horizontal .ui-slider-range-max {
+    right: 0; }
+  .filter__range .ui-widget-content {
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+    border-radius: 4px; }
+  .filter__range .ui-widget-header {
+    border: 1px solid #1565C0;
+    background-color: #1565C0; }
+  .filter__range .ui-corner-all {
+    border-radius: 4px; }
+  .filter__range .ui-widget.ui-widget-content {
+    border: 0; }
+
+.filter__values {
+  width: 320px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.filter__input {
+  width: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1565C0;
+  background-color: rgba(255, 255, 255, 0); }
+  .filter__input--right {
+    text-align: right; }
 
 .sorting__title {
   font-weight: 700;
