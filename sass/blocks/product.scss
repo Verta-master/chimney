@@ -119,3 +119,9 @@
   font-weight: 700;
   letter-spacing: 0.05em;
 }
+
+@media (max-width: 370px) {
+  .product__list {
+    justify-content: space-around;
+  }
+}
