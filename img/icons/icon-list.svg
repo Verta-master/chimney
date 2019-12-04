@@ -1,0 +1,17 @@
+<svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="82" height="82">
+<circle cx="41" cy="41" r="40.75" stroke="#DB7C42" stroke-width="0.5"/>
+<circle cx="41.0006" cy="41.0001" r="39.1881" stroke="#DB7C42" stroke-width="0.5"/>
+<circle cx="41.0002" cy="41" r="37.6262" stroke="#DB7C42" stroke-width="0.5"/>
+<circle cx="40.9998" cy="41.0003" r="36.0643" stroke="#DB7C42" stroke-width="0.5"/>
+<circle cx="41.0007" cy="40.9999" r="34.5024" stroke="#DB7C42" stroke-width="0.5"/>
+<circle cx="41.0003" cy="41" r="32.9405" stroke="#DB7C42" stroke-width="0.5"/>
+<circle cx="40.9999" cy="41.0002" r="31.3786" stroke="#DB7C42" stroke-width="0.5"/>
+<circle cx="40.9999" cy="41.0002" r="31.3786" stroke="#DB7C42" stroke-width="0.5"/>
+<circle cx="41" cy="41" r="29.8167" stroke="#DB7C42" stroke-width="0.5"/>
+</mask>
+<g mask="url(#mask0)">
+<rect x="41" y="41" width="54.6667" height="54.6667" fill="#DB7C42"/>
+</g>
+<rect x="36" y="41" width="32" height="32" fill="#1565C0"/>
+</svg>
