@@ -1880,6 +1880,8 @@ a.breadcrumbs__link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .pages--bottom {
+    padding-bottom: 10px; }
 
 .pages__link {
   display: block;
@@ -2479,3 +2481,152 @@ a.pages__link:hover, a.pages__link:active {
     background-color: #1565C0; }
     .faq__form .form__btn:hover, .faq__form .form__btn:active {
       background-color: #E65100; }
+
+.news time {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  font-size: 14px; }
+  .news time::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    background-image: url(../img/icons/icon-time-dark.svg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+.news__article,
+.news__list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.news__list {
+  margin-bottom: 30px; }
+  .news__list--recent {
+    margin-bottom: 80px; }
+    .news__list--recent .news__item {
+      margin-bottom: 30px; }
+    .news__list--recent .news__overlay {
+      top: 0;
+      padding: 25px;
+      background-color: rgba(0, 0, 0, 0.44);
+      -webkit-transition: ease-out 0.3s;
+      transition: ease-out 0.3s; }
+      .news__list--recent .news__overlay .news__title {
+        margin-top: auto;
+        font-size: 20px; }
+    .news__list--recent .news__item {
+      position: relative; }
+      .news__list--recent .news__item::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 45px;
+        bottom: -5px;
+        left: 15px;
+        right: 15px;
+        opacity: 0;
+        background: #DB7C42;
+        mix-blend-mode: multiply;
+        -webkit-filter: blur(25px);
+                filter: blur(25px);
+        -webkit-transition: ease-out 0.3s;
+        transition: ease-out 0.3s; }
+      .news__list--recent .news__item:hover::before {
+        opacity: 1;
+        -webkit-transition: ease-out 0.3s;
+        transition: ease-out 0.3s; }
+
+.news__item {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.news__link {
+  position: relative;
+  display: block; }
+  .news__link img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .news__link::before {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #E65100;
+    mix-blend-mode: multiply;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s; }
+  .news__link:hover::before, .news__link:active::before {
+    opacity: 1;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s; }
+  .news__link:hover .news__overlay, .news__link:active .news__overlay {
+    top: 0;
+    background-color: rgba(255, 255, 255, 0); }
+    .news__link:hover .news__overlay .news__title, .news__link:active .news__overlay .news__title {
+      margin-top: auto;
+      -webkit-transition: ease-out 0.3s;
+      transition: ease-out 0.3s; }
+
+.news__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #E65100; }
+  .news__overlay .news__title {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #fff;
+    -webkit-transition: ease-out 0.3s;
+    transition: ease-out 0.3s; }
+  .news__overlay time::before {
+    background-image: url(../img/icons/icon-time-white.svg); }
+
+.news__title {
+  margin-top: 7px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #1565C0; }
+
+.news__paper {
+  width: 100%;
+  margin-bottom: 20px; }
+
+.news__img {
+  width: 100%; }
+  .news__img img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.news__info {
+  padding: 10px; }
+
+.news__more {
+  color: #E65100;
+  font-size: 14px;
+  text-decoration: underline; }
+  .news__more:hover, .news__more:active {
+    text-decoration: none; }
