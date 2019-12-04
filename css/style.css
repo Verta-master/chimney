@@ -2744,3 +2744,31 @@ a.pages__link:hover, a.pages__link:active {
   letter-spacing: 0.05em; }
   .feedback__btn:hover, .feedback__btn:active {
     background-color: #DB7C42; }
+
+.docs {
+  margin-bottom: 60px; }
+  .docs .title {
+    margin-bottom: 30px; }
+  .docs .title-3 {
+    margin-top: 30px;
+    margin-bottom: 20px; }
+
+.docs__link {
+  display: block;
+  margin-bottom: 20px;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 24px;
+  color: #1565C0;
+  text-align: center;
+  background-image: url(../img/icons/icon-file.svg);
+  background-repeat: no-repeat;
+  background-size: 52px 52px;
+  background-position: top center; }
+  .docs__link span {
+    display: block;
+    font-size: 14px;
+    color: #333333; }
+  .docs__link:hover, .docs__link:active {
+    color: #E65100; }
