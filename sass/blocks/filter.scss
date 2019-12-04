@@ -36,6 +36,7 @@
   top: 0;
   left: -20px;
   right: -20px;
+  padding: 20px;
   padding-bottom: 40px;
   background-color: #F5F5F5;
 }
@@ -220,5 +221,178 @@
   &:active {
     color: #fff;
     background-color: $red;
+  }
+}
+
+.filter__list,
+.filter__menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filter__item {
+  position: relative;
+  padding: 10px;
+  padding-bottom: 5px;
+  
+  &:hover,
+  &:active
+  &--active {
+    .filter__link {
+      color: $red;
+    }
+    .filter__down svg {
+      fill: $red;
+    }
+  }
+  
+  &--opened {
+    .filter__link {
+      color: $red;
+    }
+    .filter__down svg {
+      fill: $red;
+    }
+    .filter__down {
+      transform: rotate(90deg);
+      transition: ease-out 0.3s;
+    }
+  }
+}
+
+.filter__link {
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: $blue;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.filter__down {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  transition: ease-out 0.3s;
+  
+  svg {
+    fill: $blue;
+  }
+}
+
+.filter__list {
+  display: none;
+  padding: 20px 30px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.filter__subitem {
+  font-size: 18px;
+  color: $blue;
+  
+  &:hover,
+  &:active
+  &--active {
+    color: $red;
+  }
+}
+
+.filter__range {
+  width: 320px;
+  max-width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  .ui-slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+  /* Ползунок */
+  .ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $blue;
+    box-shadow: 0;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+  }
+  .ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+  }
+  /* горизонтальный слайдер (сама полоса по которой бегает ползунок) */
+  .ui-slider-horizontal {
+    height: 5px;
+  }
+  /* позиционируем ползунки */
+  .ui-slider-horizontal .ui-slider-handle { 
+    top: -13px;
+    margin-left: -8px;
+  }
+  .ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+  }
+  .ui-slider-horizontal .ui-slider-range-min { 
+    left: 0;
+  }
+  .ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+  }
+  /* оформление полосы по которой ходит ползунок */
+  .ui-widget-content { 
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+    border-radius: 4px;
+  }
+  /* оформление активного участка (между двумя ползунками) */
+  .ui-widget-header { 
+    border: 1px solid $blue;
+    background-color: $blue;
+  }
+  /* скругление для полосы слайдера */
+  .ui-corner-all {
+    border-radius: 4px;
+  }
+  .ui-widget.ui-widget-content {
+    border: 0;
+  }
+}
+
+.filter__values {
+  width: 320px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.filter__input {
+  width: 50%;
+  font-weight: 700;
+  font-size: 16px;
+  color: $blue;
+  background-color: rgba(255,255,255,0);
+  
+  &--right {
+    text-align: right
   }
 }

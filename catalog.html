@@ -7,6 +7,7 @@
   <title>Дымоходы</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -196,7 +197,13 @@
               </fieldset>
               <fieldset class="filter__field">
                 <p class="filter__title">ЦЕНА</p>
-                
+                <div class="filter__values">
+                  <input type="text" id="amount-min" class="filter__input">
+                  <input type="text" id="amount-max" class="filter__input filter__input--right">
+                </div>
+                <div class="filter__range">
+                  <div id="slider-range"></div>
+                </div>
               </fieldset>
               <fieldset class="filter__field">
                 <p class="filter__title">ЛИНЕЙКА ПРОДУКЦИИ</p>
@@ -433,6 +440,8 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/jquery.ui.touch-punch.min.js"></script>
   <script src="js/filter.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
