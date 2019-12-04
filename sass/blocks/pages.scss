@@ -5,6 +5,10 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  
+  &--bottom {
+    padding-bottom: 10px;
+  }
 }
 
 .pages__link {
