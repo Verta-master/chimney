@@ -2663,9 +2663,6 @@ a.pages__link:hover, a.pages__link:active {
   .paper__content a:hover, .paper__content a:active {
     text-decoration: none; }
 
-.paper__content p {
-  margin-bottom: 18px; }
-
 .paper__content .table-2 {
   padding-left: 20px;
   padding-right: 20px;
