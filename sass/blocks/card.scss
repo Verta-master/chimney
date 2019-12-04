@@ -69,6 +69,7 @@
 
 .card__btn {
   height: 45px;
+  margin-top: 35px;
   margin-bottom: 30px;
   font-weight: 700;
 }
@@ -113,6 +114,7 @@
 .card__tabs {
   margin-bottom: 80px;
   padding: 20px;
+  padding-top: 30px;
   background-color: #E5E5E5;
 }
 
@@ -126,7 +128,8 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   text-align: left;
   font-weight: 700;
   font-size: 20px;
@@ -157,7 +160,7 @@
 
 .card__field {
   display: none;
-  padding-bottom: 30px;
+  padding-bottom: 22px;
 }
 
 .card__title {
@@ -275,8 +278,13 @@
   line-height: 24px;
   background-color: #F5F5F5;
   
+  p {
+    margin-top: 0;
+  }
+  
   .title-4 {
     margin-top: 0;
+    margin-bottom: 10px;
   }
   
   a {
