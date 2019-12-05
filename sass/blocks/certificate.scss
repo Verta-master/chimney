@@ -1,0 +1,26 @@
+.certificate {
+  padding-bottom: 30px;
+}
+
+.certificate__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.certificate__item {
+  width: 160px;
+  margin-bottom: 10px;
+}
+
+.certificate__img {
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

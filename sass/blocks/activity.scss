@@ -1,0 +1,45 @@
+.activity {
+  padding-top: 10px;
+  background-color: #F5F5F5;
+  
+  .title {
+    margin-bottom: 20px;
+  }
+}
+
+.activity__img {
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px);
+  
+  img {
+    display: block;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.activity__deco {
+  position: relative;
+  margin-top: 35px;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 20px;
+  }
+  
+  &::before {
+    left: -20px;
+    top: -10px;
+    background-color: $blue;
+  }
+  
+  &::after {
+    right: -20px;
+    bottom: -10px;
+    background-color: $red;
+  }
+}

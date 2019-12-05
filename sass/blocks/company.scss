@@ -1,0 +1,45 @@
+.company__title {
+  width: 100%;
+  min-height: 368px;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  background-image: url(../img/images/company.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  .title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+}
+
+.company__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.company__item {
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 14px;
+  
+  .title-4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $blue;
+  }
+}
+
+.company__icon {
+  text-align: center;
+}
