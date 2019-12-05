@@ -1,5 +1,7 @@
 .activity {
   padding-top: 10px;
+  font-size: 14px;
+  text-align: center;
   background-color: #F5F5F5;
   
   .title {
@@ -21,13 +23,13 @@
 
 .activity__deco {
   position: relative;
-  margin-top: 35px;
+  margin-top: 55px;
   
   &::before,
   &::after {
     content: "";
     position: absolute;
-    width: 50%;
+    width: 185px;
     height: 20px;
   }
   
